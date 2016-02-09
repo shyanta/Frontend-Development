@@ -1,0 +1,673 @@
+body{
+	background-color: #ffffff;
+	font-family: verdana;
+	font-size: 1em;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+body > header p.to-profile{
+	color: white;
+}
+
+body a {
+	color: orange;
+}
+
+main h1, h2, h2 a, h3, h4{
+	color: #FF4D00;
+}
+
+section.related{
+	width: 70%;
+	float: left;
+	margin-right: 2em;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+
+aside + footer {
+	color: white;
+	background-color: black;
+	width: 100%;
+	margin-right: 2em;
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+}
+
+aside + footer button{
+	display: none;
+}
+
+aside + footer section, footer > p{
+	margin: 1em;
+	text-align: left;
+	padding-right:.5em;
+}
+
+aside + footer p{
+	border-right: none;
+}
+
+aside + footer section#sitemap > ul{
+	display: flex;
+}
+
+aside + footer section#sitemap > ul > li{
+	margin: 0em 1em;
+}
+
+aside + footer section#about p{
+	-webkit-column-count: 2;
+	-webkit-column-gap: 2em;
+}
+
+aside + footer p#feedback{
+	margin: auto 0em;
+}
+
+body > header{
+	background-image: url(../img/headercmd.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	color: #000;
+	padding-bottom: 3em;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#buttons{
+	display: none;
+}
+
+body > header > #buttons button:first-child{
+	margin: .5em;
+	width: 4em;
+	height: 4em;
+	background-color: rgba(255, 255, 255, 0.7);
+	background-image: url(../img/menu.png);
+	background-size: inherit;
+	background-repeat: no-repeat;
+	border-radius: .5em .5em;
+	border-color: white;
+}
+
+body > header > #buttons button:last-child{
+	float: right;
+	margin: .5em;
+	width: 4em;
+	height: 4em;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: .5em .5em;
+	border-color: white;
+	background-image: url(../img/search.png);
+	background-size: 4em;
+	background-repeat: no-repeat;
+}
+
+h1 {
+	margin-top: 0px;
+}
+
+a{
+	color: inherit;
+}
+
+body > header > h1{
+	color: #000;
+	text-align: center;
+	-webkit-order: 3;
+	order: 3;
+}
+
+body > header > h1 + p{
+	color: #fff;
+	margin: 0em auto;
+	padding: .5em 2em;
+	border: .2em solid rgba(255, 212, 129, 0.7);
+	border-radius: 40px 10px;
+	background-color: black;
+	font-weight: bold;
+	-webkit-order: 5;
+	order: 5;
+}
+
+body > header > p.to-profile{
+	margin-right: 1em;
+	text-align: right;
+	color: #fff;
+	padding-top: 2em;
+	padding-right: 1em;
+	text-shadow: none;
+	margin: 0em;
+	-webkit-order: 6;
+	order: 6;
+}
+
+body > header picture{
+	width: 20em;
+	margin: 0em auto 3em auto;
+	-webkit-order: 4;
+	order: 4;
+}
+
+body > header picture img{
+	width: 20em;	
+	box-shadow: .4em .4em  .2em black;
+}
+
+body > header > form{
+	color: #000;
+	background-color: rgba(255,255,255,0.8);
+	text-align: right;
+	padding-right: 1em;
+	text-shadow: none;
+	-webkit-order: 1;
+	order: 1;
+	padding-top: 1em;
+}
+
+nav{
+	background-color: rgba(255,255,255,0.8);
+	line-height: 3em;
+	-webkit-order: 2;
+	order: 2;
+}
+
+nav input{
+	display: none;
+	float: left;
+}
+
+nav ul{
+	list-style: none;
+	text-align: left;
+	margin: 0em;
+	margin-top: -2.5em;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: 0 1em;
+	margin-top: .5em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	text-shadow: none;
+	font-weight: bold;
+	color: black;
+	margin-top: 10em;
+	padding: .3em .3em 0em .3em;
+	background-color: rgba(255, 255, 255, 0.5);
+	box-shadow: .1em .1em 1em black;
+}
+
+nav ul li a:hover{	
+	background-color: rgba(255, 212, 129, 0.7);
+	box-shadow: .2em .2em .5em black;
+}
+
+nav ul li a:active{
+	background-color: rgba(255, 212, 129, 0.3);
+}
+
+main {
+	width: 70%;
+	float: left;
+	border-right: 1px dashed black;
+	border-bottom: 1px dashed black;
+	padding-top: 1em;
+}
+
+main >article > header, main > article > section, main > article > footer{
+	margin: 0em auto;
+	width: 95%;
+}
+
+main > article > section > img{
+	width: 50%;
+}
+
+main > article > header > p {
+	-webkit-column-count: 2;
+	column-count: 2;
+}
+
+section img{
+	width: 100%;
+}
+
+article>header> h1,h2,h3,h4 {
+	text-align: left;
+}
+
+section.related {
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	width: 70%;
+	float:left;
+	margin-right: 0em;
+}
+
+section.related h2 {
+	position: absolute;
+	width: 90%;
+	margin-left: .5em;
+}
+
+section.related article{
+	margin-top: 3em;
+	padding: 1em;
+}
+
+section.related article section video{
+	width: 100%;
+}
+
+button#mededelingen{
+	display: none;
+}
+
+aside {
+	display: flex;	
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	width: 25%;
+	margin: 0em auto;
+}
+
+main > form, main > h1, main > p {
+	width: 95%;
+	margin: 0em auto;
+}
+
+main > form{
+	margin-top: 2em;
+}
+
+main form fieldset{
+	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	border-color: black;--
+}
+
+main form fieldset label span{
+	display: block;
+	margin-bottom: .2em;
+}
+
+main form fieldset label em{
+	color: red;
+	margin-left: 2em;
+}
+
+main form fieldset label textarea{
+	width: inherit;
+	height: 5em;
+}
+
+input[type="submit"] {
+	background-color: black;
+	color: white;
+}
+
+input[type="email"] {
+	width: 20em;
+}
+
+main form fieldset:nth-child(2) label{
+	display: flex;
+}
+
+/* Start Responsive Website Media Queries*/
+
+/* Mediaqueries Grotere Schermen*/
+
+/* Breekpunt 90% */
+@media screen and (min-width: 130em){
+	body, form input{
+		font-size: 115%;
+	}
+
+	body > header > form > button{
+		height: 2em;
+		width: 3em;
+	}
+}
+
+/* Breekpunt 75% */
+@media screen and (min-width: 150em){
+	body, form input{
+		font-size: 135%;
+	}
+
+	body > header > form > button{
+		height: 3em;
+		width: 4em;
+	}
+}
+
+/* Breekpunt 67% */
+@media screen and (min-width: 170em){
+	body, form input{
+		font-size: 150%;
+	}
+
+	body > header > form > button{
+		height: 4em;
+		width: 5em;
+	}
+}
+
+/* Breekpunt 50% */
+@media screen and (min-width: 190em){
+	body{
+		font-size: 200%;
+	}
+
+	body > header > form > button{
+		height: 5em;
+		width: 6em;
+	}
+}
+
+/* Breekpunt 33% */
+@media screen and (min-width: 250em){
+	body{
+		font-size: 290%;
+	}
+
+	body > header > form > button{
+		height: 6em;
+		width: 7em;
+	}
+}
+
+/* Breekpunt 25%*/
+@media screen and (min-width: 380em){
+	body{
+		font-size: 380%;
+	}
+
+	body > header > form > button{
+		height: 7em;
+		width: 8em;
+	}
+}
+
+/* Mediaqueries Kleinere Schermen*/
+
+/*Breekpunt Footer */
+@media screen and (max-width: 117em){
+	body{
+		line-height: 2em;
+	}
+
+	footer {
+		padding-top: 1em;
+		flex-direction: column;
+	}
+
+	aside + footer button {
+		display: block;
+	}
+
+	#sitemap ul{
+		flex-direction: column;
+	}
+
+	section#sitemap, section#about, section#credits, section#search{
+		display: none;
+	}
+
+	aside+ footer p#feedback{
+		margin-left: 1em;
+	}
+
+	section#sitemap.visible, section#contact.visible, section#about.visible, section#credits.visible, section#search.visible{
+		display: block;
+	}
+
+	footer > section> h2{
+		display: none;
+	}
+
+	footer > section#contact > h2{
+		display: block;
+		color: #fff;
+		font-size: 2em;
+		text-align: left;
+		margin-top: 1em;
+		text-decoration: underline;
+		font-weight: inherit;
+	}
+
+	footer >button {
+		color: #fff;
+		background-color: black;
+		font-size: 2em;
+		cursor: pointer;
+		border: none;
+		text-align: left;
+		margin-top: 1em;
+		text-decoration: underline;
+		margin-left: .3em;
+	}
+
+	footer > button.credits{
+		padding-bottom: 1em;
+	}
+
+	footer > section#search > form > input{
+		height: 3em;
+	}
+
+	section#contact{
+		order: 1;
+	}
+
+	section#sitemap{
+		order: 2;
+	}
+
+	button.sitemap{
+		order: 2;
+	}
+
+	section#search{
+		order: 3;
+	}
+
+	button.search{
+		order: 3;
+	}
+
+	section#about{
+		order: 4;
+	}
+
+	button.about{
+		order: 4;
+	}
+
+	section#credits{
+		order: 5;
+	}
+
+	button.credits{
+		order: 5;
+	}
+
+	p#feedback{
+		order: 6;
+	}
+}
+
+/*Breekpunt section.related*/
+@media screen and (max-width: 110em){
+	section.related{
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-wrap: wrap;
+		float:left;
+		margin-right: 0em;
+	}
+
+	section.related article{
+		border-right: .1em dashed black;
+		margin-top: 0em;
+	}	
+
+	section.related article section:nth-child(4) ul {
+		max-width: 110em;
+		padding-left: 1em;
+	}
+
+	section.related h2 {
+		position: inherit;
+	}
+
+	section.related article section video{
+	width: 70%;
+	}
+}
+
+/* Breekpunt header image*/
+@media screen and (max-width: 100em ){
+	body > header{
+		background-image: url(../img/header_responsive.jpg);
+	}
+}
+
+/*Breekpunt Navigation and article*/
+@media screen and (max-width: 76em){
+	#buttons{
+		display: inline-block;
+		background-color: #fff;
+	}
+
+	nav {
+		display: none;
+		background-color: #fff;
+		padding-bottom: .5em;
+	}
+
+	body > header > form {
+		display: none;
+		background-color: #fff;
+		padding-bottom: .5em;
+		text-align: center;
+	}
+
+	body > header > form > button{
+		height: 4em;
+		width: 6em;
+	}
+
+	body > header > form > label > input{
+		height: 3em;
+	}
+
+	body > header > form > label > input[placeholder]{
+		font-size: 1.1em;
+	}
+
+	nav ul li{
+		display: block;
+		line-height: 2em;
+		font-size: 1.3em;
+		text-align: center;
+	}
+
+	main > article > header > p {
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+
+	main > article > section > p {
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+
+	main > article > section > img{
+	width: 80%;
+	}
+
+	main form fieldset label input{
+		height: 2em;
+	}
+
+	main form fieldset label input[type="radio"], main form fieldset label input[type="checkbox"]{
+		width: 2em;
+	}
+}
+
+/*Breekpunt header image*/
+@media screen and (max-width: 60em){
+	body > header{
+		background-image: url(../img/header_mobile.png);
+	}
+}
+
+/*Breekpunt Aside verbergen + footer*/
+@media screen and (max-width: 55em){
+	aside{
+		float: left;
+		width: 90%;
+		display: none;
+		margin: 0 1em;
+	}
+
+	aside > section:first-child > h2{
+		display: none;
+	}
+	
+	button#mededelingen{
+		display: block;
+		background-color: #fff;
+		border: none;
+		text-decoration: underline;
+		font-weight: bold;
+		font-size: 2em;
+    	cursor: pointer;
+    	padding-bottom: 1em;
+	}
+
+	main{
+		width: 100%;
+		border-right: none;
+	}
+
+	section.related{
+		width: 100%;
+	}
+
+	section.related article{
+		border-right: none;
+	}
+
+	section.related article section video{
+		width: 100%;
+	}
+}
+
+.inVisible{
+	display: none;
+}
+
+.visible{
+	display: block;
+}
